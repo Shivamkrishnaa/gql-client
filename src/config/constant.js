@@ -2,7 +2,7 @@
 export const constants = {
     Gql : {
         baseUrl: `${process.env.REACT_APP_NODE_SECURE}://${process.env.REACT_APP_NODE_URL}:${process.env.REACT_APP_NODE_PORT}/graphql`,
-        baseWebSocketUrl: `ws://${process.env.REACT_APP_NODE_URL}:${process.env.REACT_APP_NODE_PORT}/subscriptions`,
+        baseWebSocketUrl: `${process.env.REACT_APP_NODE_SOCKET}://${process.env.REACT_APP_NODE_URL}:${process.env.REACT_APP_NODE_PORT}/subscriptions`,
         split: {
             kind: 'OperationDefinition',
             operation: 'subscription'
