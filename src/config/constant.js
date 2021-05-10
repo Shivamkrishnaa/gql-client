@@ -7,7 +7,7 @@ export const constants = {
             kind: 'OperationDefinition',
             operation: 'subscription'
         }
-    },
+    }, 
     api : {
         baseUrl: `${process.env.REACT_APP_NODE_SECURE}://${process.env.REACT_APP_NODE_URL}:${process.env.REACT_APP_NODE_PORT}/`,
         register : {
